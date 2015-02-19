@@ -1,0 +1,21 @@
+{
+    "name": "koala-framework/kwf-deploy-aws-elasticbeanstalk",
+    "description": "Scripts for deploying Koala Framework Application to Amazon Elastic Beanstalk",
+    "require": {
+        "symfony/console": "2.5.*",
+        "koala-framework/kwf-deploy": "*",
+        "aws/aws-sdk-php": "2.7.18",
+        "symfony/yaml": "2.6.4"
+    },
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Niko Sams",
+            "email": "niko.sams@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Kwf\\DeployEb\\": "" }
+    },
+    "bin": ["bin/deploy-eb"]
+}
