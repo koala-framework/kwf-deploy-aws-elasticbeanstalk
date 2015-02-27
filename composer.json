@@ -5,7 +5,7 @@
         "symfony/console": "2.5.*",
         "koala-framework/kwf-deploy": "*",
         "aws/aws-sdk-php": "2.7.*",
-        "amazonwebservices/aws-sdk-for-php": "1.5.*",
+        "amazonwebservices/aws-sdk-for-php": "1.6.*",
         "symfony/yaml": "2.6.*"
     },
     "license": "BSD-2-Clause",
