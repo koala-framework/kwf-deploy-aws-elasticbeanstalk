@@ -30,11 +30,6 @@ class DeployCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        if (!file_exists(('bootstrap.php'))) {
-            throw new \Exception("Run this script in the application root directory");
-            exit(1);
-        }
-
         $ebConfig = Yaml::parse(file_get_contents('.elasticbeanstalk/config.yml'));
         $applicationName = $ebConfig['global']['application_name'];
         $region = $ebConfig['global']['default_region'];

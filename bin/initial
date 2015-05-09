@@ -27,9 +27,11 @@ if (!file_exists(('bootstrap.php'))) {
     exit(1);
 }
 
-use Kwf\DeployEb\WriteConfigCommand;
+use Kwf\DeployEb\UploadS3Command;
+use Kwf\DeployEb\DbDumpCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application('kwf-deploy-aws-elasticbeanstalk', '0.1');
-$application->add(new WriteConfigCommand);
+$application->add(new UploadS3Command);
+$application->add(new DbDumpCommand);
 $application->run();
